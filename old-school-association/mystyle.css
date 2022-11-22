@@ -857,25 +857,25 @@ input[type="checkbox"]{
     width: 70%;
     border-radius: 10px;
 }
-.profiles h1{
-    text-align: left;
+.profiles-img h1{
+    text-align: center;
     margin-bottom: 10px;
     font-weight: 100;
-    color: #009688;
+    color: var(--secondary-color);
 }
 .profiles-desc{
     display: flex;
     align-items: center;
     margin-bottom: 10px;
 }
-.profiles-icon img{
-    width: 50px;
-    height: 50px;
-    font-size: 30px;
-    line-height: 50px;
-    border-radius: 8px;
-    color: #009688;
-    border: 1px solid #009688;
+.profiles-icon i{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    border-radius: 50%;
+    color: var(--primary-color);
+    /* border: 1px solid #009688; */
 }
 .profiles-text p{
     padding: 0 20px;
