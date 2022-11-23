@@ -798,7 +798,104 @@ input[type="checkbox"]{
     margin: 2em 0;
 }
 
-/** Profile Page ***/
+/** Settings Page ***/
+.settings {
+    /* background: var(--light-color); */
+    max-width: 500px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 30px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+}
+.settings form {
+    width: 100%;
+}
+.settings form .input_field {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+.settings form .input_field label {
+    width: 200px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+.settings form .input_field input,
+.settings form .input_field .textarea {
+    width: 100%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+.settings form .input_field .textarea {
+    resize: none;
+    height: 125px;
+}
+.settings form .input_field .custom_select {
+    position: relative;
+    width: 100%;
+    height: 37px;
+}
+.settings form .input_field .custom_select select {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid #d5dbd9;
+    width: 100%;
+    height: 100%;
+    padding: 8px 10px;
+    border-radius: 3px;
+    outline: none;
+    background: #fff;
+}
+.settings form .input_field .custom_select:before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    border: 8px solid;
+    border-color: #d5dbd9 transparent transparent transparent;
+    pointer-events: none;
+}
+.settings form .input_field input:focus,
+.settings form .input_field .textarea:focus,
+.settings form .input_field select:focus {
+    border: 1px solid var(--primary-color);
+}
+.settings form .btn_group {
+    display: flex;
+    justify-content: end;
+}
+.settings form .btn_group .btn4 {
+    margin: 10px;
+    width: 80px;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 0;
+    background: var(--primary-color);
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+.settings form .btn_group .btn4:hover,
+.settings form .btn_group .btn-4 {
+    background: #fff;
+    color: #333;
+    border: 1px solid var(--primary-color);
+}
+@media (max-width: 420px){
+    .settings form .input_field {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .settings form .input_field label {
+        margin-bottom: 5px;
+    }
+}
+
 
 /*--profiles Page--*/
 #profile{
