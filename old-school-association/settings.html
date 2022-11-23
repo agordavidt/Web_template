@@ -5,171 +5,145 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>FEDVOSA | Account Settings </title>
+    <title>Settings </title>
 
     <link rel="stylesheet" href="mystyle.css">
-
-    <style>
-        body {
-            /* background: linear-gradient(to right, #003347, #85a2b2); */
-            overflow: hidden;
-        }
-        .contain {
-            background: #fff;
-            width: 80%;
-            /* width: 60%; */
-            height: 80vh;
-            margin: 0 auto;
-            position: relative;
-            margin-top: 5%;
-            box-shadow: 2px 5px 20px rgba(0,0,0,.5);
-        }
-        .leftbox {
-            float: left;
-            top: -5%;
-            left: 5vw;
-            position: absolute;
-            width: 10%;
-            height: 110%;
-            background: #85a2b2;
-            box-shadow: 3px 3px 10px rgba(119,119,119,.5);
-            border: none;
-        }
-        .rightbox {
-            display: 60%;
-            margin-left: 10%;
-            background: red;
-        }
-        .tabshow {
-            display: none;
-            transition: all .5s ease-in;
-            width: 80%;
-        }
-        nav a {
-            list-style: none;
-            padding: 35px;
-            color: #fff;
-            font-size: 1.1em;
-            display: block;
-            transition: all .3s ease-in-out;
-        }
-        nav a:hover {
-            color: #003347;
-            cursor: pointer;
-            transform: scale(1.2);
-        }
-        nav a:first-child {
-            margin-top: 7px;
-        }
-        nav a.active {
-            color: #003347;
-        }
-        h1 {
-            color: #003347;
-        }
-    </style>
     
 
 </head>
-<body>
-    
-
-        <div class="contain">
-            <div class="leftbox">
-                <nav>
-                    <a onClick="tabs(0)" class="tab active"><i class="fa fa-user"></i></a>
-                    <a onClick="tabs(1)" class="tab"><i class="fa fa-credit-card"></i></a>
-                    <a onClick="tabs(2)" class="tab"><i class="fa fa-lock"></i></a>
-                    <a onClick="tabs(3)" class="tab"><i class="fa fa-tasks"></i></a>
-                    <a onClick="tabs(4)" class="tab"><i class="fa fa-sign-out"></i></a>
-                </nav>
+<body class="bg-light">
+    <!---Navbar-->
+    <!---Navbar-->
+    <input type="checkbox" id="check">
+    <nav class="nav_i">
+        <div class="icon" style="width: 40px; height: 40px"><img src="images/logo-2.png" alt=""></div>
+        <!-- <div class="search_box">
+            <input type="search" placeholder="search member">
+            <span class="fa fa-search"></span>
+        </div> -->
+        <ol>
+            <li><a href="index.html">Home</a></li>
+            <!-- <li><a href="about.html">About</a></li>            
+            <li><a href="faq.html">FAQs</a></li>
+            <li><a href="contact.html">Contact</a></li> -->
+            <div class="btn_2 li_main"><img src="images/blank-profile-picture.png">
+                <div class="menu">
+                    <ul>
+                        <li><a href="settings.html">Settings</a></li>
+                        <li><a href="signin.html"> Logout</a></li>
+                    </ul>
+                </div>   
+            
             </div>
-            <div class="rightbox">
-                <div class="profile tabshow">
-                    <h1>Personal information</h1>
-                    <form action="#">
-                        <input type="text" placeholder="Enter your name" required>
-                        <input type="email" placeholder="Enter your email address" required>
-                        <input type="text" placeholder="Enter your subject" required>
-                        <textarea name="#" id="#" rows="8" placeholder="Message" required></textarea>
-                        <button type="submit" class="btn">Cancel</button>
-                        <button type="submit" class="btn">Update</button>
-                    </form>
-                    
-                </div>
-                <div class="payment tabshow">
-                    <h1>Payment Details</h1>
-                    <h2>Payment Method</h2>
-                    <input type="text">
-                    <h2>Billing Address</h2>
-                    <input type="text">
-                    <h2>ZipCode</h2>
-                    <input type="text">
-                    <h2>Billing Date</h2>
-                    <input type="date">
-                </div>
-                <div class="subscription tabshow">
-                    <h1>Subcritption</h1>
-                    <h2>Payment Method</h2>
-                    <input type="text">
-                    <h2>Billing Address</h2>
-                    <input type="text">
-                    <h2>ZipCode</h2>
-                    <input type="text">
-                    <h2>Billing Date</h2>
-                    <input type="date">
-                </div>
-                <div class="privacy tabshow">
-                    <h1>Privacy Policy</h1>
-                    <h2>Payment Method</h2>
-                    <input type="text">
-                    <h2>Billing Address</h2>
-                    <input type="text">
-                    <h2>ZipCode</h2>
-                    <input type="text">
-                    <h2>Billing Date</h2>
-                    <input type="date">
-                </div>
-                <div class="settings tabshow">
-                    <h1>Settings</h1>
-                    <h2>Settings</h2>
-                    <input type="text">
-                    <h2>Billing Address</h2>
-                    <input type="text">
-                    <h2>ZipCode</h2>
-                    <input type="text">
-                    <h2>Billing Date</h2>
-                    <input type="date">
-                </div>
+        </ol>
+        <label for="check" class="bar">
+            <span class="fa fa-bars" id="bars"></span>
+            <span class="fa fa-times" id="times"></span>
+        </label>
+    </nav>
 
+
+    <section class="settings">
+        <h2>Member information</h2>
+        <form action="">
+            <div class="input_field">
+                <label for="">First Name</label>
+                <input type="text" class="input">
             </div>
-        </div>
-    
-    
-    
-    
-    
+            <div class="input_field">
+                <label for="">Last Name</label>
+                <input type="text" class="input">
+            </div>
+            <div class="input_field">
+                <label for=""> Profile Image</label>
+                <div>
+                    <img style = "width: 100px; height: 100px; " src="{{user_profile.profileimg.url}}" />
+                <input type="file" name="image" value="" class="shadow-none bg-gray-100">
+                </div>
+                
+            </div>
+            <div class="input_field">
+                <label for="gender">Gender</label>
+                
+                    <input type="radio" name="gender" value="male">Male
+                    <input type="radio" name="gender" value="female">Female
+                                
+            </div>
+            <div class="input_field">
+                <label for="">Graduation Set</label>
+                <div class="custom_select">
+                    <select name="gradset" id="gradset" class="shadow-none bg-gray-100">
+                        <option value="0">SET 2021</option>
+                        <option value="1">SET 2020</option>
+                        <option value="2">SET 2019</option>
+                        <option value="3">SET 2018</option>
+                        <option value="4">SET 2017</option>
+                        <option value="5">SET 2026</option>
+                        <option value="6">SET 2015</option>
+                        <option value="7">SET 2014</option>
+                        <option value="8">SET 2013</option>
+                        <option value="9">SET 2012</option>
+                        <option value="10">SET 2011</option>
+                        <option value="11">SET 2010</option>
+                        <option value="12">SET 2009</option>
+                        <option value="13">SET 2008</option>
+                        <option value="14">SET 2007</option>
+                        <option value="15">SET 2006</option>
+                        <option value="16">SET 2005</option>
+                        <option value="17">SET 2004</option>
+                        <option value="18">SET 2003</option>
+                        <option value="19">SET 2002</option>
+                        <option value="20">SET 2001</option>
+                        <option value="21">SET 2000</option>                        
+                    </select>
+                </div>                
+            </div>
+            <div class="input_field">
+                <label for="">School House</label>
+                <div class="custom_select">
+                    <select name="house" id="house" class="shadow-none bg-gray-100">
+                        <option value="mande">Mande House</option>
+                        <option value="kuma">Kuma House</option>
+                        <option value="abu">Abugh House</option>
+                        <option value="pine">Pine House</option>                        
+                    </select>
+                </div>                
+            </div>
+            <div class="input_field">
+                <label for="">About Me</label>
+                <textarea name="" id="" class="textarea"></textarea>
+            </div>
+            <div class="input_field">
+                <label for="">Occupation</label>
+                <input type="text" class="input">
+            </div>
+            <div class="input_field">
+                <label for="phone">Phone Number</label>
+                <input type="tel" name="phone" placeholder="080-0000-0000" value="{{user_profile.phone}}" class="shadow-none bg-gray-100">
+            </div>
+            <div class="input_field">
+                <label for="">Marital Status</label>
+                <div class="custom_select">
+                    <select name="relationship" id="relationship" class="shadow-none bg-gray-100">
+                        <option name="single" value="single">Single</option>
+                        <option name="married" value="married">Married</option>                                
+                    </select>
+                </div>               
+            </div>
+            <div class="input_field">
+                <label for="">Location</label>
+                <input type="text" class="input">
+            </div>
+            <div class="btn_group">
+                <button class="btn4 btn-4"> <a href="/">Cancel</a> </button>
+                <button type="submit" class="btn4"> Save </button>
+            </div>
 
-    <script src="jquery/jquery.js"></script>
-        <script>
-            const tabBtn = document.querySelectorAll(".tab");
-            const tab = document.querySelectorAll(".tabshow");
-
-            function tabs(panelIndex) {
-                tab.forEach(function(node) {
-                    node.style.display = "none";
-                });
-                tab[panelIndex].style.display = "block";
-            }
-            tabs(0);
-        </script>
-
-        <script>
-            $(".tab").click(function() {
-                $(this).addClass("active").siblings().removeClass("active");
-            })
-        </script>
-    
+        </form>
+    </section>
+   
 </body>
 </html>
