@@ -96,9 +96,9 @@ img{
     
 }
 .nav_i ol li:hover a{
-    /* background: #fff;
-    color: var(--primary-color); */
-    border-bottom: 2px #fff solid;
+   
+    color: var(--secondary-color);
+    /* border-bottom: 2px #fff solid; */
 }
 /* .nav_i ol .btn_2 {
     margin-left: 25px;
