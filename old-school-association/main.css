@@ -371,3 +371,26 @@ body {
         padding: 20px;
     }
 }
+
+/** Read more styling  **/
+#blog-text p{
+    color: #bba8bff5;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+#span::before{
+    content: 'show more';
+    color: var(--error-color);
+    cursor: pointer;
+}
+#blog-text.active p{
+    display: block;
+}
+#blog-text.active #span::before{
+    content: 'show less';
+}

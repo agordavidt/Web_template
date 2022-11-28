@@ -98,12 +98,19 @@
                 </a>
                 
             </div>
-            <div class="blog-text">
+            <div class="blog-text" id="blog-text">
                 <span>30 November 2022 / Projects</span>
                 <a href="#" class="blog-title">Presidents's Address to School MAnagement</a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque hic quasi quisquam dolore eaque debitis reiciendis molestias consequatur vero fuga magni at, dicta tenetur architecto dolorem ipsam explicabo voluptatibus praesentium sequi? Tempora consequuntur accusantium debitis ipsam est. Quibusdam est, quod, beatae doloremque aliquam, eaque architecto consectetur dolor odio dignissimos porro sint molestias maiores nulla mollitia. Magnam sint exercitationem est, voluptatibus deserunt illum tempore itaque inventore nemo saepe quasi. Optio illum, totam magni in voluptates possimus pariatur nihil labore? Qui deserunt quod rem provident tempora hic. Perspiciatis soluta rerum atque fugiat suscipit molestias 
                     labore accusamus, minus reprehenderit quisquam voluptas consectetur praesentium.</p>
                     <a href="#">Read More</a>
+                    <span id="span"></span>
+                    <script type="text/javascript">
+                        document.getElementById('span').addEventListener('click', function(){
+                            document.getElementById('blog-text').classList.toggle('active');
+                        });
+
+                    </script>
             </div>
             
         </div>
