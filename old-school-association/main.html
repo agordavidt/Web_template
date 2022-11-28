@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>FEDVOSA | Home </title>
+
+    <link rel="stylesheet" href="main.css">
+    
+
+</head>
+<body>
+    <!--Head Slider Section Starts -->
+    <header class="header">
+        <a href="#" ><img style="width: 40px; height: 40px"src="images/logo-2.png" alt=""></a>
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Events</a>
+            <a href="#">FAQs</a>
+            <a href="#">Contact</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-btn"></i>            
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-users" id="users-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+        <form action="" class="search-form">
+            <input type="search" id="search-box" class="box" placeholder="search here">
+            <label for="search-box"><i class="fas fa-search"></i></label>
+        </form>
+
+        <div class="users">
+            <div class="box">
+                <i class="fa fa-eye"></i>
+                <img src="images/secgen.png" style="width: 40px; height: 40px">
+                <div class="conten">
+                    <h3>shedrack</h3>                                       
+                </div>
+                <!-- <a href="" class="quantity">view</a> -->
+            </div>
+            <div class="box">
+                <i class="fa fa-eye"></i>
+                <img src="images/pubsec.png" style="width: 40px; height: 40px">
+                <div class="conten">
+                    <h3>John </h3>                                       
+                </div>
+                <!-- <a href="" class="quantity">view</a> -->
+            </div>
+            <div class="box">
+                <i class="fa fa-eye"></i>                
+                <img src="images/tressurer.png" style="width: 40px; height: 40px">
+                <div class="conten">
+                    <h3>Gabriel</h3>                                     
+                </div>
+                <!-- <a href="" class="quantity">view</a>   -->
+            </div>
+        </div>
+        <div class="login">
+            <a href="">Account Settings</a>
+            <a href="">Logout</a>
+        </div>
+    </header>
+    <!--Head Slider Section Ends -->
+
+   
+
+    <!--Head-->
+    
+    
+    <section class="slider">
+        <div class="load"></div>
+        <div class="content">
+            <div class="principal">
+                <h1 >WELCOME</h1>
+                <p>Federal Government College Vandeikya<br>Old Students Association</p>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+
+        let searchForm = document.querySelector('.search-form');
+
+        document.querySelector('#search-btn').onclick = () => {
+            searchForm.classList.toggle('active');
+            users.classList.remove('active');
+            login.classList.remove('active');
+            navbar.classList.remove('active');        
+        }
+
+        let users = document.querySelector('.users');
+
+        document.querySelector('#users-btn').onclick = () => {
+            users.classList.toggle('active');
+            searchForm.classList.remove('active');             
+            login.classList.remove('active');
+            navbar.classList.remove('active');
+        }
+
+        let login = document.querySelector('.login');
+
+        document.querySelector('#login-btn').onclick = () => {
+            login.classList.toggle('active');
+            searchForm.classList.remove('active'); 
+            users.classList.remove('active');            
+            navbar.classList.remove('active');
+        }
+
+        let navbar = document.querySelector('.navbar');
+
+        document.querySelector('#menu-btn').onclick = () => {
+            navbar.classList.toggle('active');
+            searchForm.classList.remove('active'); 
+            users.classList.remove('active');
+            login.classList.remove('active');            
+        }
+
+        window.onscroll = () => {
+            searchForm.classList.remove('active'); 
+            users.classList.remove('active');
+            login.classList.remove('active');
+            navbar.classList.remove('active');
+        }
+
+
+    </script>
+    
+    </body>
