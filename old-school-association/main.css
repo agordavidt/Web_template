@@ -374,8 +374,8 @@ body {
 
 /** Read more styling  **/
 #blog-text p{
-    color: #bba8bff5;
-    font-size: 17px;
+    color: #9b9b9b;
+    font-size: 1.5rem;
     font-weight: 500;
     margin-bottom: 5px;
     display: -webkit-box;
@@ -394,3 +394,5 @@ body {
 #blog-text.active #span::before{
     content: 'show less';
 }
+
+
