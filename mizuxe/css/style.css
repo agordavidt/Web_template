@@ -11,7 +11,10 @@ body {
 
 #showcase {
   position: relative;
-  background: url("../img/mountains.jpg");
+  background: url("../img/fed1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height: 600px; }
   #showcase .primary-overlay {
     background: rgba(50, 146, 166, 0.8);
