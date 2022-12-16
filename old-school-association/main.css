@@ -46,13 +46,14 @@ body {
     font-weight: bolder;
     color: black;
 }
+
 .header .navbar a{
     
     font-size: 1.9rem;
-    margin: 0 1rem;
+    margin: 1rem 1rem;
     color: var(--light-color);
-    padding: 10px 20px;
-    border-right: 2px solid #eee;
+    padding: 10px 20px; 
+    font-weight: 700;  
 }
 .header .navbar a:hover {
     color: var(--secondary-color);
@@ -253,34 +254,34 @@ body {
 }
 @keyframes slide {
     0% {
-        background-image: linear-gradient(95deg, rgba(0,0,0,0.7),rgba(0,0,0,0.3)), url(images/fed2.jpg);
+        background-image: linear-gradient(95deg, rgba(0,0,0,0.3),rgba(0,0,0,0.1)), url(images/fed2.jpg);
     }
     20% {
-        background-image: linear-gradient(95deg, rgba(0,0,0,0.7),rgba(0,0,0,0.3)), url(images/fed2.jpg);
+        background-image: linear-gradient(95deg, rgba(0,0,0,0.3),rgba(0,0,0,0.1)), url(images/fed2.jpg);
     }
     20.01% {
-        background-image: linear-gradient(95deg, rgba(0,0,0,0.7),rgba(0,0,0,0.3)), url(images/fed1.jpg);
+        background-image: linear-gradient(95deg, rgba(0,0,0,0.3),rgba(0,0,0,0.1)), url(images/fed1.jpg);
     }
     40% {
-        background-image: linear-gradient(95deg, rgba(0,0,0,0.7),rgba(0,0,0,0.3)), url(images/fed1.jpg);
+        background-image: linear-gradient(95deg, rgba(0,0,0,0.3),rgba(0,0,0,0.1)), url(images/fed1.jpg);
     }
     40.01% {
-        background-image: linear-gradient(95deg, rgba(0,0,0,0.7),rgba(0,0,0,0.3)), url(images/fed3.jpeg);
+        background-image: linear-gradient(95deg, rgba(0,0,0,0.3),rgba(0,0,0,0.1)), url(images/fed3.jpeg);
     }
     60% {
-        background-image: linear-gradient(95deg, rgba(0,0,0,0.7),rgba(0,0,0,0.3)), url(images/fed3.jpeg);
+        background-image: linear-gradient(95deg, rgba(0,0,0,0.3),rgba(0,0,0,0.1)), url(images/fed3.jpeg);
     }
     60.01% {
-        background-image: linear-gradient(95deg, rgba(0,0,0,0.4),rgba(0,0,0,0.3)), url(images/visit.jpeg);
+        background-image: linear-gradient(95deg, rgba(0,0,0,0.4),rgba(0,0,0,0.1)), url(images/visit.jpeg);
     }
     80% {
-        background-image: linear-gradient(95deg,rgba(0,0,0,0.4),rgba(0,0,0,0.3)), url(images/visit.jpeg);
+        background-image: linear-gradient(95deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)), url(images/visit.jpeg);
     }
     80.01% {
-        background-image: linear-gradient(95deg, rgba(0,0,0,0.4),rgba(0,0,0,0.3)), url(images/visit.jpeg);
+        background-image: linear-gradient(95deg, rgba(0,0,0,0.4),rgba(0,0,0,0.1)), url(images/visit.jpeg);
     }
     100% {
-        background-image: linear-gradient(95deg, rgba(0,0,0,0.4),rgba(0,0,0,0.3)), url(images/visit.jpeg);
+        background-image: linear-gradient(95deg, rgba(0,0,0,0.4),rgba(0,0,0,0.1)), url(images/visit.jpeg);
     }
 }
 
