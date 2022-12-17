@@ -20,9 +20,10 @@ img{
     justify-content: space-between;
     padding: 10px 25px;
     background: #f4f4f4;
+    color: #003347;
 }
 .top-bar span {
-    color: #fff;
+    color: #85a2b2;
 }
 .top-bar ul {
     list-style: none;
@@ -32,10 +33,10 @@ img{
     margin: 0px 5px;
 }
 .top-bar a {
-    color: #fff;
+    color: #85a2b2;
 }
 .top-bar a:hover {
-    color: #222;
+    color: #003347;
 }
 nav {
     background: #85a2b2;
@@ -43,11 +44,16 @@ nav {
     display: flex;
     align-items: center;
 }
+nav li:hover {
+    background: white;
+}
 nav a {
     color: #fff;
+    text-transform: uppercase;
 }
 nav a:hover {
-    color: #ef4b3f;
+    color: #003347;
+   
 }
 .logo {
     flex: 1;
@@ -95,7 +101,5 @@ nav a:hover {
         position: absolute;
         top: 15px;
         right: 20px;
-    }
-
-    
+    }    
 }
